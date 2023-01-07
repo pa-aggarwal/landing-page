@@ -1,0 +1,95 @@
+:root {
+    --color-dark: #1F2937;
+    --color-bright: #3882F6;
+    --color-grey: #E5E7EB;
+    --color-white: #F9FAF8;
+}
+
+body {
+    font-family: "Roboto", Tahoma, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    color: var(--color-white);
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.logo {
+    color: var(--color-white);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    column-gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.header a {
+    color: inherit;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.hero-section {
+    background-color: var(--color-dark);
+    color: var(--color-grey);
+    font-size: 20px;
+}
+
+.hero-section > * {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hero-section p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+.hero-content {
+    display: flex;
+    gap: 75px;
+    padding: 160px 0;
+}
+
+.hero-text {
+    /* Allows the image to grow */
+    flex-shrink: 2;
+}
+
+.hero-button {
+    background-color: var(--color-bright);
+    border-radius: 10px;
+    color: var(--color-white);
+    font-size: inherit;
+    display: inline-block;
+    padding: 10px 35px;
+}
+
+.hero-image {
+    background-color: #747A86;
+    color: var(--color-white);
+    flex-basis: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
