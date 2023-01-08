@@ -59,20 +59,25 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
 }
 
 .header ul {
     list-style: none;
     display: flex;
-    column-gap: 25px;
     margin: 0;
     padding: 0;
 }
 
 .header a {
     color: inherit;
+    display: inline-block;
     text-decoration: none;
+    padding: 20px;
+}
+
+.header a:hover {
+    background-color: var(--color-white);
+    color: var(--color-dark);
 }
 
 .hero-section,
@@ -191,6 +196,12 @@ button:hover {
     font: inherit;
     display: inline-block;
     padding: 5px 35px;
+}
+
+.cta-button:hover {
+    background-color: var(--color-white);
+    border-color: var(--color-white);
+    color: var(--color-bright);
 }
 
 .footer {
