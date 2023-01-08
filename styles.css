@@ -10,11 +10,15 @@ body {
     margin: 0;
 }
 
+/* Remove all default browser margins */
+h1, h2, h3, p {
+    margin: 0;
+}
+
 h1 {
     color: var(--color-white);
     font-size: 48px;
     font-weight: 900;
-    margin: 0;
 }
 
 button:hover {
@@ -109,7 +113,7 @@ button:hover {
 
 .info-section p {
     color: var(--color-dark);
-    margin: 10px 0 0;
+    margin-top: 10px;
 }
 
 .info-container {
@@ -128,4 +132,31 @@ button:hover {
     border-radius: 15px;
     margin: 0 auto;
     height: var(--square-size);
+}
+
+.quote-section {
+    background-color: var(--color-grey);
+    color: var(--color-dark);
+    padding: 90px 0 80px;
+}
+
+.quote-section blockquote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 790px;
+}
+
+.quote-author {
+    align-self: flex-end;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 25px;
 }
