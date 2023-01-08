@@ -7,6 +7,7 @@
 
 body {
     background-color: var(--color-white);
+    color: var(--color-dark);
     font-family: "Roboto", Tahoma, sans-serif;
     margin: 0;
 }
@@ -26,8 +27,30 @@ button:hover {
     cursor: pointer;
 }
 
-.logo {
+.large-container {
+    margin: 0 auto;
+    max-width: 1050px;
+}
+
+.small-container {
+    margin: 0 auto;
+    max-width: 790px;
+}
+
+.section-padding {
+    padding: 85px 0;
+}
+
+.round-corners {
+    border-radius: 10px;
+}
+
+.bright-bg {
+    background-color: var(--color-bright);
     color: var(--color-white);
+}
+
+.logo {
     font-size: 24px;
     font-weight: 700;
 }
@@ -49,23 +72,17 @@ button:hover {
 
 .header a {
     color: inherit;
-    font-size: 18px;
     text-decoration: none;
 }
 
-.hero-section {
+.hero-section,
+.footer {
     background-color: var(--color-dark);
     color: var(--color-grey);
-    font-size: 20px;
-}
-
-.hero-section > * {
-    max-width: 1050px;
-    margin: 0 auto;
+    font-size: 18px;
 }
 
 .hero-section p {
-    font-size: 18px;
     font-weight: 300;
     margin: 15px 0;
 }
@@ -82,17 +99,13 @@ button:hover {
 }
 
 .hero-button {
-    background-color: var(--color-bright);
-    border-radius: 10px;
-    color: var(--color-white);
-    font-size: inherit;
+    font-size: 20px;
     display: inline-block;
     padding: 10px 35px;
 }
 
 .hero-image {
     background-color: #686D78;
-    color: var(--color-white);
     flex-basis: 70%;
     display: flex;
     justify-content: center;
@@ -101,19 +114,16 @@ button:hover {
 
 .info-section {
     text-align: center;
-    color: var(--color-dark);
-    padding-bottom: 90px;
+    padding-top: 0;
 }
 
 .info-section h2 {
-    color: var(--color-dark);
     font-size: 36px;
     font-weight: 900;
     margin: 45px 0;
 }
 
 .info-section p {
-    color: var(--color-dark);
     margin-top: 10px;
 }
 
@@ -124,21 +134,18 @@ button:hover {
 }
 
 .info-child {
-    --square-size: 150px;
-    flex-basis: var(--square-size);
+    --image-size: 150px;
+    flex-basis: var(--image-size);
 }
 
 .info-image {
     border: 4px solid var(--color-bright);
     border-radius: 15px;
-    margin: 0 auto;
-    height: var(--square-size);
+    height: var(--image-size);
 }
 
 .quote-section {
     background-color: var(--color-grey);
-    color: var(--color-dark);
-    padding: 90px 0 80px;
 }
 
 .quote-section blockquote {
@@ -151,8 +158,6 @@ button:hover {
 .quote-container {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    max-width: 790px;
 }
 
 .quote-author {
@@ -162,26 +167,15 @@ button:hover {
     margin-right: 25px;
 }
 
-.cta-section {
-    padding: 80px 0;
-}
-
-.cta-bg-bright {
-    background-color: var(--color-bright);
-    border-radius: 10px;
-    color: var(--color-white);
+.cta-content {
     font-size: 17px;
     padding: 50px 0;
-    margin: 0 auto;
-    max-width: 1050px;
 }
 
 .cta-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 0 auto;
-    max-width: 790px;
 }
 
 .cta-container h3 {
@@ -192,10 +186,15 @@ button:hover {
 
 .cta-button {
     background-color: transparent;
-    border: 3px solid currentColor;
-    border-radius: 10px;
+    border: 2px solid currentColor;
     color: inherit;
     font: inherit;
     display: inline-block;
     padding: 5px 35px;
+}
+
+.footer {
+    font-weight: 300;
+    text-align: center;
+    padding: 35px 0;
 }
